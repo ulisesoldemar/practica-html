@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Contacto</a>
+    </div>
+
+    <h1 id="contact">Contacto</h1>
+
+    <div class="form">
+        <form action="formulario.html" method="get">
+            <label for="name">Nombre:
+                <input type="text" id="name" name="name" placeholder="Ej. Juan López" required>
+            </label>
+
+            <label for="mail">Correo:
+                <input type="email" id="mail" name="mail" placeholder="ejemplo@ejemplo.com" required>
+            </label>
+
+            <label for="password">Contraseña:
+                <input type="password" id="password" name="password" required>
+            </label>
+
+            <label for="radio">Género:</label>
+            <label class="radio">
+                <input name="radio" type="radio" value="male">
+                <span>Masculino</span>
+            </label>
+            <label class="radio">
+                <input name="radio" type="radio" value="female">
+                <span>Femenino</span>
+            </label>
+
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+
+            <label for="city">Ciudad: </label>
+            <select id="city" name="city" required>
+                <option value="gdl">Guadalajara</option>
+                <option value="zppn">Zapopan</option>
+                <option value="tnl">Tonalá</option>
+                <option value="other">Otra</option>
+            </select>
+
+            <label for="contract">
+                <input type="checkbox" id="contract" name="contract"> Me interesa contratarte
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <section>
+            <a href="mailto:ulises.ortega2937@alumnos.udg.com">Contáctame</a>
+        </section>
+    </div>
+</body>
+
+</html>
